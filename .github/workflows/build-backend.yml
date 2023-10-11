@@ -16,7 +16,10 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 18
-          cache: 'yarn'
+          cache: "yarn"
+
+      - name: Install package dependencies
+        run: yarn install
 
       # - uses: pnpm/action-setup@v2
       #   name: Install pnpm
